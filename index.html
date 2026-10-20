@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boteco Posto 15 — Caderno Gastronômico | Design por Wender Paiva</title>
+  <meta name="description" content="Caderno Gastronômico e Cardápio Editorial — Boteco Posto 15. Direção de Arte e Concepção Visual por Wender Paiva." />
+
+  <!-- Tipografia Editorial: Cormorant Garamond, Newsreader, Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+
+  <!-- CSS3 Puro & Arquitetônico (Sem Frameworks) -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- MARCA D'ÁGUA ARQUITETÔNICA & COLOFÃO FIXO "WENDER PAIVA" -->
+  <div id="watermark-root"></div>
+
+  <!-- ESTRUTURA DE GRID EDITORIAL SUÍÇO -->
+  <div class="editorial-shell">
+
+    <!-- 1. CABEÇALHO ARQUITETÔNICO -->
+    <header class="site-header">
+      <div class="header-brand">
+        <span class="brand-monogram">P15</span>
+        <div class="brand-titles">
+          <span class="brand-name">Boteco Posto 15</span>
+          <span class="brand-sub">Setor Marista — Goiânia, GO</span>
+        </div>
+      </div>
+
+      <div class="header-telemetry" aria-label="Especificações de Serviço">
+        <div class="telemetry-item">
+          <span>Pressão / Chopp:</span>
+          <span class="telemetry-value">-2.0 °C</span>
+        </div>
+        <div class="telemetry-item">
+          <span>Fogo &amp; Réchauds:</span>
+          <span class="telemetry-value">Ferro Fundido</span>
+        </div>
+        <div class="telemetry-item">
+          <span>Direção Visual:</span>
+          <span class="telemetry-value">Wender Paiva</span>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <!-- Alternador de Acabamento Material: Carvão & Pedra vs. Papel & Linho -->
+        <button
+          type="button"
+          data-action="toggle-theme"
+          class="header-btn"
+          title="Alternar acabamento entre Carvão Mineral e Papel Linho"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+          </svg>
+          <span id="theme-toggle-label">Papel &amp; Linho</span>
+        </button>
+
+        <button
+          type="button"
+          data-action="open-drawer"
+          data-tab="favoritos"
+          class="header-btn"
+        >
+          <span>Salvos</span>
+          <span id="header-fav-count" class="count-tag">2</span>
+        </button>
+
+        <button
+          type="button"
+          data-action="open-drawer"
+          data-tab="comanda"
+          class="header-btn"
+        >
+          <span>Comanda</span>
+          <span id="header-order-count" class="count-tag">4</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 2. HERO SECTION EDITORIAL (ASSIMÉTRICO 7:5) -->
+    <section class="hero-editorial">
+      <div class="hero-copy-col">
+        <div>
+          <div class="hero-kicker">
+            Caderno Gastronômico — Edição N.º 15
+          </div>
+
+          <h1 class="hero-headline">
+            A arte da botecagem
+            <em>com alma nobre.</em>
+          </h1>
+
+          <p class="hero-lead">
+            Uma curadoria dedicada à cozinha de balcão e aos réchauds de ferro fundido.
+            Reunimos os petiscos autorais consagrados do <strong>Boteco Posto 15</strong> e a tradição dos
+            cortes nobres servidos fumegantes à mesa, escoltados pelo ritual do chope a −2 °C com três dedos de creme denso.
+          </p>
+
+          <div class="hero-cta-row">
+            <button
+              type="button"
+              data-action="scroll-to-menu"
+              class="btn-editorial-primary"
+            >
+              <span>Abrir o Cardápio</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25">
+                <line x1="12" y1="4" x2="12" y2="20"/>
+                <polyline points="6 14 12 20 18 14"/>
+              </svg>
+            </button>
+
+            <button
+              type="button"
+              data-action="open-drawer"
+              data-tab="comanda"
+              class="btn-editorial-secondary"
+            >
+              <span>Consultar Comanda da Mesa</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-specs-grid">
+          <div class="spec-cell">
+            <span class="spec-index">01 / COZINHA DE AUTOR</span>
+            <h2 class="spec-title">Botecagem P15</h2>
+            <p class="spec-desc">
+              Aperitivo Mônaco, Croquetas do Chef e Disco de Costela defumada com Canastra.
+            </p>
+          </div>
+
+          <div class="spec-cell">
+            <span class="spec-index">02 / FERRO FUNDIDO</span>
+            <h2 class="spec-title">Chapas &amp; Réchauds</h2>
+            <p class="spec-desc">
+              Picanha Maturatta, Carne Serenada Angus e Surf &amp; Turf servidos à mesa.
+            </p>
+          </div>
+
+          <div class="spec-cell">
+            <span class="spec-index">03 / SERPENTINA −2 °C</span>
+            <h2 class="spec-title">Ritual Líquido</h2>
+            <p class="spec-desc">
+              Chope tirado sob pressão precisa, cachaças de alambique e botânicos frescos.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media-col">
+        <figure class="hero-figure">
+          <img
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85"
+            alt="Cortes nobres e gastronomia de botequim servidos em mesa rústica"
+          />
+        </figure>
+        <figcaption class="hero-caption">
+          <span>FIG. 01 — SALÃO PRINCIPAL / RUA 15, SETOR MARISTA</span>
+          <span>PROPORÇÃO 4:5</span>
+        </figcaption>
+      </div>
+    </section>
+
+    <!-- Âncora do Cardápio -->
+    <div id="menu-anchor"></div>
+
+    <!-- 3. BARRA DE CATEGORIAS STICKY -->
+    <div class="sticky-nav-bar">
+      <nav id="category-nav-container" class="category-tabs" aria-label="Seções do Cardápio"></nav>
+    </div>
+
+    <!-- 4. BARRA DE BUSCA & FILTROS DE CLASSIFICAÇÃO -->
+    <div class="controls-toolbar">
+      <div class="search-box">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25">
+          <circle cx="10.5" cy="10.5" r="7.5"/>
+          <line x1="16" y1="16" x2="21.5" y2="21.5"/>
+        </svg>
+        <input
+          id="search-input"
+          type="text"
+          class="search-input"
+          placeholder="Pesquisar por prato, corte (picanha, mignon, costela), queijo ou insumo..."
+          aria-label="Pesquisar no cardápio"
+        />
+        <button
+          id="clear-search-btn"
+          type="button"
+          data-action="clear-search"
+          class="search-clear-btn"
+          style="display: none;"
+        >
+          Limpar
+        </button>
+      </div>
+
+      <div id="filter-pills-container" class="filters-group" role="group" aria-label="Filtros do Cardápio"></div>
+    </div>
+
+    <div class="toolbar-status">
+      <span id="results-count">14 REGISTROS EXIBIDOS</span>
+      <span>SELECIONE “FICHA &amp; HARMONIZAÇÃO” PARA NOTAS DO SOMMELIER</span>
+    </div>
+
+    <!-- 5. LISTAGEM DE CATEGORIAS E PRATOS -->
+    <main id="menu-sections-container"></main>
+
+    <!-- 6. RODAPÉ ARQUITETÔNICO & COLOFÃO -->
+    <footer class="site-footer">
+      <div class="footer-col">
+        <div class="footer-kicker">01 / CASA &amp; CONCEITO</div>
+        <h3 style="font-family: var(--font-serif); font-size: 1.35rem; font-weight: 500;">
+          Boteco Posto 15
+        </h3>
+        <p style="font-size: 0.84rem; color: var(--ink-secondary); margin-top: 0.6rem; line-height: 1.65;">
+          Gastronomia boêmia de rigor técnico. Cortes certificados, defumação própria em lenha frutífera e serviço de chope tirado a −2 °C.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-kicker">02 / ENDEREÇO &amp; HORÁRIOS</div>
+        <p style="font-size: 0.84rem; color: var(--ink-primary); font-weight: 500;">
+          Rua 15, Setor Marista — Goiânia, Goiás
+        </p>
+        <p style="font-size: 0.82rem; color: var(--ink-secondary); margin-top: 0.45rem;">
+          Terça a Sexta-feira: 17h00 às 01h00<br />
+          Sábados, Domingos e Feriados: 11h00 às 01h00
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-kicker">03 / CRÉDITO EDITORIAL &amp; AUTORIA</div>
+        <p style="font-family: var(--font-serif); font-size: 1.25rem; font-weight: 600; color: var(--ink-primary);">
+          Design &amp; Concepção Visual por Wender Paiva
+        </p>
+        <p style="font-size: 0.8rem; color: var(--ink-secondary); margin-top: 0.45rem; line-height: 1.6;">
+          Projeto gráfico digital concebido sob os princípios do design editorial suíço: tipografia clássica, grid arquitetônico visível e materialidade tangível.
+        </p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- BOTÃO FIXO DE COMANDA DA MESA (CANTOS SÓBRIOS 2PX) -->
+  <button
+    type="button"
+    data-action="open-drawer"
+    data-tab="comanda"
+    class="floating-command-bar"
+  >
+    <span class="floating-cmd-label">
+      <span>Comanda da Mesa</span>
+      <span>[<span id="floating-order-count">4</span>]</span>
+    </span>
+    <span id="floating-order-subtotal" class="floating-cmd-total">
+      R$ 288,60
+    </span>
+  </button>
+
+  <!-- CONTÊINERES DINÂMICOS: MODAL, DRAWER E TOAST -->
+  <div id="modal-container"></div>
+  <div id="drawer-container"></div>
+  <div id="toast-container"></div>
+
+  <!-- SCRIPTS VANILLA JS PUROS (SEM FRAMEWORKS) -->
+  <script src="js/data.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
